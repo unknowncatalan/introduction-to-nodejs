@@ -6,14 +6,14 @@ My interpretation of the problem statement is that data were already in a Mongod
 $ git clone https://github.com/unknowncatalan/introduction-to-nodejs.git
 $ cd introduction-to-nodejs/assignment-03
 $ ./import-data.sh
-...
+```
 
 As stated, I've used the "async" module to split the process in different execution tasks with the same number of documents to be processed per task. I read the data from the collections and then I consolidate those data in a new collection.
 
 I've tested it visually, using mongoui tool.
 
 Then install the modules with
-...
+```
 $ npm install
 ```
 Now you can execute the migration script by typing:
