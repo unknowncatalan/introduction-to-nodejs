@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "579ea8b9-d4d1-44e5-8a11-70351cd5946d",
+		"name": "introduction-to-nodejs-assignment-04",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/accounts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"my first account\",\n\t\"balance\": 20\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts"
+					]
+				},
+				"description": "Adding a new account"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/accounts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts"
+					]
+				},
+				"description": "Get all accounts"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/accounts/5ab17c13a24a115ae4262884",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"balance\": 2000\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/accounts/5abeab5d1b115623c0c85c62",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts",
+						"5abeab5d1b115623c0c85c62"
+					]
+				},
+				"description": "Update the balance of an account - PUT YOUR ID HERE!"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/accounts/5ab17c13a24a115ae4262884",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/accounts/5abeab5d1b115623c0c85c62",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts",
+						"5abeab5d1b115623c0c85c62"
+					]
+				},
+				"description": "Delete account - PUT YOUR ID HERE!"
+			},
+			"response": []
+		}
+	]
+}
