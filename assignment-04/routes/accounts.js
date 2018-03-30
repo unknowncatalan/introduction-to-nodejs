@@ -30,7 +30,7 @@ module.exports = {
     },
 
     updateAccount(req, res, next) {
-        Account.findOne({_id: req.params.id}, function(err, account) {
+        Account.findById(req.params.id, function(err, account) {
             if (err) {
                 res.status(500).send();
             } else if (!account) {
@@ -54,7 +54,7 @@ module.exports = {
     },
 
     removeAccount(req, res, next) {
-        Account.findOne({_id: req.params.id}).remove().exec(function(err) {
+        Account.findById(req.params.id).remove().exec(function(err) {
             if (err) {
                 res.status(500).send();
             } else {
